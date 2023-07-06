@@ -39,7 +39,7 @@ class RegisterLayer extends Component
             'email' => 'required|email|unique:users,email',
             'number' => 'required|numeric|digits:10',
             'dob' => 'required',
-            'image' => 'required|image',
+            'image' => 'required|image|mimes:png,jpg',
             'password' => 'required|min:6|max:10',
             'repassword' => 'required|same:password',
             'description' => 'required',
